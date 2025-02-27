@@ -3,59 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>자기소개 위키 페이지</title>
+    <title>우아한테크코스 라젤 위키</title> <!--타이틀 설정정-->
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <div id="app">
-      <header>
+      <header> <!-- 헤더 시작 -->
         <h1 class="logo">
           <img src="./images/header-logo.png" alt="행성이 로고" width="166" height="147" />
-          <span class="text">크루 위키</span>
+          <span class="text">CREW WIKI</span> <!-- 왼쪽 제목 -->
         </h1>
-      </header>
+      </header> <!-- 헤더 끝 -->
       <main>
-        <h2 class="title">크론</h2>
+        <h2 class="title">라젤 (RAZEL)</h2>
         <hr />
-        <section>
+        <section id = "introduction">
           <h3 class="subtitle">자기소개</h3>
           <p>
-            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
-            큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
-            성취들이 모여 제가 한 걸음 더 성장했다는 것을 느낄 때면 가슴이 벅차오르거든요. 그러다 문득, 저처럼 변화를
-            갈망하며 도전을 꿈꾸는 분들이 많다는 것을 알게 되었어요. 나의 성장도 의미 있지만, 누군가의 성장을 함께할 수
-            있다는 건 매일 새로운 설렘을 주는 일이에요.
+            안녕하세요! 라임맛 젤라또를 줄여서 라젤로 닉네임을 지은 우테코 7기 BE 라젤입니다.
+          </p>
+          <p>
+            안녕하세요! 라임맛 젤라또를 줄여서 라젤로 닉네임을 지은 우테코 7기 BE 라젤입니다.
           </p>
         </section>
 
-        <section>
-          <h3 class="subtitle">나를 울린 인생 작품</h3>
+        <section is = "gallery"> <!-- 갤러리 시작 -->
+          <h3 class="subtitle">라젤의 갤러리</h3>
           <article>
-            <h4>인생 영화</h4>
+            <h3>고양이 SuSu</h3>
+            <section class="gallery">
+              <div class="gallery-grid">
+                <img src="images/susu01.jpg" alt="이미지 1" />
+                <img src="images/susu02.jpg" alt="이미지 2" />
+                <img src="images/susu03.jpg" alt="이미지 3" />
+                <img src="images/susu04.jpg" alt="이미지 4" />
+                <img src="images/susu05.jpg" alt="이미지 5" />
+                <img src="images/susu06.jpg" alt="이미지 6" />
+                <img src="images/susu07.jpg" alt="이미지 7" />
+                <img src="images/susu08.jpg" alt="이미지 8" />
+                <img src="images/susu09.jpg" alt="이미지 9" />
+              </div>
+            </section>
+          </article>
+        </section> <!-- 갤러리 끝 -->
+
+        <section id = "sing"> <!-- 나를 울린 인생 작품 시작 -->
+          <h3 class="subtitle">라젤의 플레이 리스트</h3>
+          <article>
+            <h3>크리스토퍼 - bad</h3>
             <div class="thumbnail">
               <img
-                src="https://image.tmdb.org/t/p/w1280/u8ffl7CRAS12KA8eQEtkLuHg8Fm.jpg"
-                width="200"
-                alt="그래비티 영화 포스터"
+                src="images/bad.jpg"
+                width="500"
+                alt="bad 앨범 표지"
               />
             </div>
             <p>
-              알폰소 쿠아론 감독이 연출하고 샌드라 불럭이 주연으로 출연하는 영화 「그래비티」는 우주 정거장에서 임무
-              수행 중 고립된 한 우주인의 생존과 귀환을 그린 작품이다. 대학생 시절 처음 본 이 영화는 당시엔 그저 지루한
-              우주 영화였다. 그런데 이 영화를 다시 보니, 마치 내 미래를 미리 보여준 복선과도 같다는 점을 깨달았다.
+              크리스토퍼 Bad는 한국 대중이 선호하는 감성적이면서, 세련된 팝 음악을 대표하는 곡으로써 
+              부드러운 멜로디와 감성적인 가사 그리고 매력적인 보컬이 어우러져 대중성이 강한 노래입니다.
+            </p>
+            <p>
+              덴마크 출신 가수이며, 우리 나라에서는 이영지(trouble), 청하(when I get old)와 함께 작업했었습니다. (두 곡 모두 정말 좋습니다!)
+            </p>
+            <p>
+              라젤의 한줄평: "다음 내한 때 누가 여권 좀 뺏어주세요.."
             </p>
           </article>
-        </section>
+        </section> <!-- 나를 울린 인생 작품 끝 -->
 
-        <section>
+        <section id = "book"> <!-- 나를 울린 인생 작품 시작 -->
+          <h3 class="subtitle">라젤의 인생 책이자 영화</h3>
+          <article>
+            <h3>해리포터: 마법사의 돌</h3>
+            <div class="thumbnail">
+              <img
+                src="images/harrypotter.jpg"
+                width="300"
+                alt="해리포터 영화 포스터"
+              />
+            </div>
+            <p>
+              놀러가서 꼭 틀어놓는 디폴트 영화이자 글자를 읽는 것에 대한 즐거움을 알게 해주었던 책입니다.
+            </p>
+            <p>
+              많은 책들이 버려지거나 바뀔 때 여전히 책장의 한 자리를를 차지하고 있는 소중한 추억 중 하나이기도 합니다. 
+            </p>
+            <p>
+              많은 분들이 해당 책에 대하여 알고 있을 꺼라고 생각해 설명은 생략하겠습니다. (힘든거 아님!)
+            </p>
+            <p>
+              라젤의 한줄평: "해리포터 굿즈는 못참지...."
+            </p>
+          </article>
+        </section> <!-- 나를 울린 인생 작품 끝 -->
+
+        <section id = "comment"> <!-- 댓글 시작 -->
+          <h3 class="subtitle">방문자 댓글</h3>
           <div class="comment-writing-container">
             <form>
               <fieldset>
-                <legend>댓글 쓰기</legend>
-                <textarea
-                  placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
-                ></textarea>
+                <input type="text" name="comment" placeholder="댓글을 입력해주세요!" />
+                <div class="button-container">
+                  <button type="submit">등록</button>
+                  <button type="reset">취소</button>
+                </div>
               </fieldset>
             </form>
           </div>
@@ -64,66 +116,41 @@
               <div class="comment-item">
                 <div class="comment-author">
                   <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
+                  <span>라젤</span>
                 </div>
                 <div class="comment-content">
-                  대학생 때 읽었던 모모가 문득 생각나서 다시 펼쳐봤는데, 글쓴이님 말씀처럼 정말 지금 보니까 완전 다르게
-                  다가오더라구요! 회색 신사들이 들려주는 '시간 절약'이란 말이 마치 요즘 유튜브에서 흔히 보이는 '갓생
-                  살기' 영상들 같아서 씁쓸하게 웃었습니다 ㅎㅎ 광안리 해변 이야기는 정말 이 글의 하이라이트인 것 같아요.
-                  저도 이제는 가끔은 멍때리는 시간을 가져야겠어요 :&#41;
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="comment-item">
-                <div class="comment-author">
-                  <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
-                </div>
-                <div class="comment-content">
-                  와... 크론이라는 닉네임의 의미를 읽고 푸지 이발사가 딱 떠올랐어요. 저도 회사에서 30분 단위로 시간
-                  쪼개서 일정 관리하다가 얼마 전에 번아웃 왔거든요 😅 시간을 아낀다고 오히려 삶을 놓치고 있었던 것
-                  같아서 마음이 찡했습니다. 글쓴이님 글 덕분에 오늘은 퇴근하고 동네 한 바퀴 돌아야겠어요~
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="comment-item">
-                <div class="comment-author">
-                  <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
-                </div>
-                <div class="comment-content">
-                  이 글 읽으면서 계속 고개를 끄덕였네요 👍 특히 자기계발서 이야기... 저도 요즘 '갓생살기' 영상 보면서
-                  조급해졌었는데, 모모 다시 읽어봐야겠어요! 시간은 아끼는 게 아니라 느끼는 거라는 말에 완전 공감입니다.
-                  저도 이제는 하루에 한 번은 커피 마시면서 창밖 구경하기로 했어요 ☕️
-                </div>
+                  Home Sweet Home! 
+                </div> 
               </div>
             </li>
           </ul>
-        </section>
+        </section> <!-- 댓글 끝 -->
 
-        <footer>
+        <footer> 
           <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
           <p>&copy; 우아한테크코스 All Rights reserved.</p>
         </footer>
+
       </main>
       <aside class="right-sidebar">
-        <div class="profile-image">크론 프로필 이미지</div>
+        <div class="profile-image">라젤 프로필 이미지</div>
         <nav>
           <h2>Contents</h2>
           <ol class="contents">
             <li>
-              <a href="#">자기소개</a>
+              <a href="#introduction">자기소개</a>
             </li>
             <li>
-              <a href="#">나만의 갤러리</a>
+              <a href="#gallery">라젤의 갤러리</a>
             </li>
             <li>
-              <a href="#">나를 울린 인생 작품</a>
+              <a href="#sing">라젤의 플레이 리스트</a>
             </li>
             <li>
-              <a href="#">감상평</a>
+              <a href="#book">라젤의 인생 소설</a>
+            </li>
+            <li>
+              <a href="#comment">방문자 댓글</a>
             </li>
           </ol>
         </nav>

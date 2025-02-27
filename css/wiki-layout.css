@@ -23,7 +23,7 @@ h4 {
 header {
   padding-top: var(--page-padding);
   width: var(--header-width);
-  background-color: var(--header-bg-color);
+  background-color: mediumspringgreen;
   flex-shrink: 0;
 }
 
@@ -87,10 +87,14 @@ hr {
 }
 
 aside {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
   padding-top: var(--page-padding-top);
   width: var(--aside-width);
   background-color: var(--aside-bg-color);
   flex-shrink: 0;
+  background-color: mediumspringgreen;
 }
 
 aside h2 {
@@ -98,12 +102,13 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: 100%;
-  background-position: center 100%;
-  width: var(--aside-width);
-  height: var(--aside-width);
-
+  background-image: url(../images/razel-profile.jpg);
+  background-size: cover; /* 이미지가 요소의 크기에 맞게 잘리도록 설정 */
+  background-position: center; /* 이미지 중심을 맞춤 */
+  width: calc(var(--aside-width) * 0.8); /* 가로 크기 줄이기 (80%) */
+  height: calc(var(--aside-width) * 0.8); /* 세로 크기 줄이기 (80%) */
+  border-radius: 50%; /* 원형으로 만들기 */
+  
   text-indent: -1000rem;
 }
 
@@ -114,6 +119,7 @@ aside.right-sidebar nav {
 ol.contents {
   list-style-type: decimal;
   padding: 24px;
+  background-color: whitesmoke;
 }
 
 ol.contents li:not(:last-child) {
@@ -151,4 +157,61 @@ footer p {
 
   --divider-color: #efefef;
   --font-default-color: #333;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--page-paragraph-margin-y);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3x3 정렬 */
+  grid-gap: 1px; /* 이미지 간격 */
+  max-width: 900px; /* 전체 크기 조정 */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto; /* 높이를 자동으로 설정 */
+  aspect-ratio: 1 / 1; /* 정사각형 비율 설정 */
+  object-fit: cover; /* 이미지가 비율 유지하며 잘리도록 */
+  border-radius: 2px; /* 모서리 둥글게 */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.comment-writing-container {
+  margin-top: 20px; /* 댓글 입력 영역과 다른 요소 간의 간격 */
+}
+
+input {
+  width: 100%; /* 댓글 입력란을 가득 채우도록 설정 */
+  height: 100px; /* 높이 조정 */
+  padding: 10px; /* 패딩 추가 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  border-radius: 4px; /* 모서리 둥글게 */
+}
+
+fieldset {
+  display: flex;
+}
+
+.button-container {
+  margin-top: 10px; /* 버튼 간의 간격 */
+}
+
+button {
+  padding: 10px 20px; /* 버튼의 패딩 조정 */
+  margin-right: 10px; /* 버튼 간의 간격 */
+  border: none; /* 기본 테두리 제거 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  background-color: mediumseagreen; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색상 */
+  cursor: pointer; /* 커서 포인터로 변경 */
+}
+
+button:hover {
+  background-color: darkgreen; /* 버튼 호버 시 색상 변화 */
 }
